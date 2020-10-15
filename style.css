@@ -1,0 +1,71 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+.container .section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    background-blend-mode: multiply;
+
+}
+.container .section:nth-child(1){
+    background: rgb(255, 0, 200) url(bg_img/bg_01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(2){
+    background: #f00 url(bg_img/bg_2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(3){
+    background: #ffd900 url(bg_img/bg_03.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(4){
+    background:  #20a000 url(bg_img/bg_04.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(5){
+    background: #a200ff url(bg_img/bg_02.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section .content{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    max-width: 700px;
+    margin: 10px;
+
+}
+.container .section .content h2{
+    background: #fff;
+    color: #111;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 2em;
+}
+.container .section .content p{
+    background: #fff;
+    color: #111;
+    font-weight: 300;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
